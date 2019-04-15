@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+main{
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("images/lapin.jpg");
+	background-size: cover;
+}
+.main_wrapper{
+	width: 70%;
+	padding-top: 50px;
+	margin: 0 auto;
+}
+.clock{
+	position: relative;
+	border-radius: 50%;
+	border: 30px solid #83637f;
+	width: 400px;
+	height: 400px;
+	background: #202022;
+	/*background-image: url("images/background.jpg");*/
+	background-size: cover;
+	box-shadow:inset 2px 5px 20px rgba(0, 0, 0, 0.8);
+	/*opacity: 0.8;*/
+}
+.clock::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left : 0;
+	right: 0;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: solid 1px #dddd;
+	background: #fff;
+	z-index: 100;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+	opacity: 1;
+}
+.clock::after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	/*transform: translate(-50%, -50%);*/
+	transform: scale(0.7);
+	width: 100%;
+	height: 150px;
+	background-image: url("images/CASA LAPIN-logo.png");
+	opacity: 0.5;
+}
+
+.lineHour{
+	width: 10px;
+	height: 128px;
+	background: #fff;
+	border: solid 1px #ddd;
+	position: absolute;
+	border-radius: 5px;
+	top: calc(50% - 128px);
+	left: calc(50% - 5px);
+	transform-origin: bottom;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	opacity: 1;
+}
+.lineMin{
+	width: 4px;
+	height: 178px;
+	background: #fff;
+	border: solid 1px #ddd;
+	border-radius: 5px;
+	position: absolute;
+	top: calc(50% - 178px);
+	left: calc(50% - 2px);
+	transform-origin: bottom;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+	opacity: 1;
+}
+.lineSec{
+	width: 2px;
+	height: 188px;
+	background: #fff;
+	border: solid 1px #ddd;
+	border-radius: 5px;
+	position: absolute;
+	top: calc(50% - 188px);
+	left: calc(50% - 1px);
+	transform-origin: bottom;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
