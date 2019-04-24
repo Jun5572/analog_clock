@@ -1,4 +1,3 @@
-console.log('test');
 setInterval(() => {
 	//現在時刻を取得
 	const now = new Date();
